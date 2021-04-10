@@ -58,3 +58,15 @@ Citizen.CreatThread (function()
 end
 end)
 
+
+
+
+-- BATAS AHIR HAYAT
+AddEventHandler('onResourceStop', function(resource)
+	if resource == GetCurrentResourceName() then
+		if menuOpen then
+			ESX.UI.Menu.CloseAll()
+		end
+	end
+end)
+
