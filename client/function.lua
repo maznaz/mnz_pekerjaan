@@ -21,7 +21,7 @@ DrawText3D = function(x, y, z, text)
 end
 
 
--- item JOB Apel
+-- item JOB Apple
 
 OpenPlantApel = function (entity)
     TaskStartScenarioInPlace(PlayerPedId(), "task play anime", 0, true)
