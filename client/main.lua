@@ -1,7 +1,7 @@
 ESX         = nil
 CachePlant  = {}
 ClosetPlant = {
-    'prop_apel'
+    'prop_tree_birch_05'
 }
 
 Citizen.CreatThread (function()
