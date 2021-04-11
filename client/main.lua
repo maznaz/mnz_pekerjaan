@@ -46,7 +46,7 @@ Citizen.CreatThread (function()
                     if not CachePlant(entity)
                     OpenPlantApel(entity)
                 else
-                    ESX.ShowNotification-----------
+                    export['mythic_notify']:SendAlert('inform', 'text Client', 2500, {['background-color'] = '#ffffff', ['color'] = '#000000' })
                 end
             end
             break
