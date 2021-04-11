@@ -18,9 +18,9 @@ AddEventHandler('mnz_PickApel:getItem', function()
         local quantity = math.random (items)
         local itemfound = ESX.GetItemLabel(randomitem)
         xPlayer.addInventoryItem()
-        TriggerClientEvent('NOTIF')
+        TriggerClientEvent('mythic_notify:client:SendAlert', source, {type = 'inform', text = 'Anda mendapatkan apel', length = 2500, style = { ['background-color'] = '#ffffff', ['color'] = '#000000' } })
     else
-        TriggerClientEvent('NOTIF NO')
+        TriggerClientEvent('mythic_notify:client:SendAlert', source, {type = 'error', text = 'Apel sudah di petik.', length = 2500, style = { ['background-color'] = '#ffffff', ['color'] = '#000000' } })
     end
 end)
 
