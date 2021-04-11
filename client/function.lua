@@ -15,8 +15,8 @@ DrawText3D = function(x, y, z, text)
         SetTextCentre (1)
         AddTextComponenString (text)
     DrawText (_x, _y)
-    local factor = (string. ---- (Text)) / 370
-    DrawRect (_x, _y, + 0.0150, 0.030 + factor, 0.030, 66, 66, 66, 150)
+    local factor = (string.len(Text)) / 370
+    DrawRect (_x, _y + 0.0150, 0.030 + factor, 0.030, 66, 66, 66, 150)
     end
 end
 
