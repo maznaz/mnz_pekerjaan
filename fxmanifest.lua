@@ -10,8 +10,9 @@ version '1.0.0'
 
 
 client_scripts {
-    'client/main.lua'
-    'locales/id.lua'
+    'client/main.lua',
+    'client/function.lua',
+    'locales/id.lua',
     'config.lua'
 }
 
