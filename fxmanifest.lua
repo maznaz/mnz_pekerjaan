@@ -10,13 +10,14 @@ version '1.0.0'
 
 
 client_scripts {
-    'client/main.lua',
+    'client/apel.lua',
     'client/function.lua',
     'locales/id.lua',
     'config.lua'
 }
 
 server_script {
+    '@mysql-async/lib/MySQL.lua',
     'server/main.lua',
     'locales/id.lua',
     'config.lua'
