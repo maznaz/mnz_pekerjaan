@@ -86,29 +86,16 @@ local function Jual(source, zone)
 						local money = math.random(8000,10000)
 						xPlayer.removeInventoryItem('sayur', 1000)
 						local societyAccount = nil
-
-						TriggerEvent('esx_addonaccount:getSharedAccount', 'society_boulangerie', function(account)
-							societyAccount = account
-						end)
-						if societyAccount ~= nil then
-							societyAccount.addMoney(money)
-							TriggerClientEvent('esx:showNotification', xPlayer.source, _U('comp_earned') .. money)
-						end
+						xPlayer.addMoney(money)
+						TriggerClientEvent('esx:showNotification', xPlayer.source, _U('comp_earned') .. money)
 						Sell(source,zone)
 					end)
 				elseif (apel == 1) then
 					SetTimeout(1100, function()
 						local money = math.random(55,75)
 						xPlayer.removeInventoryItem('apel', 4)
-						local societyAccount = nil
-
-						TriggerEvent('esx_addonaccount:getSharedAccount', 'society_boulangerie', function(account)
-							societyAccount = account
-						end)
-						if societyAccount ~= nil then
-							societyAccount.addMoney(money)
-							TriggerClientEvent('esx:showNotification', xPlayer.source, _U('comp_earned') .. money)
-						end
+						xPlayer.addMoney(money)
+						TriggerClientEvent('esx:showNotification', xPlayer.source, _U('comp_earned') .. money)
 						Sell(source,zone)
 					end)
 				end
